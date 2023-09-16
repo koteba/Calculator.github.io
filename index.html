@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main">
+        <form name="form">
+            <input name="textview" type="text" class="textview"/>
+        </form>
+
+        <div class="clearfix">
+            <div class="col-3"><input type="button" value="C" class="button top-button" onclick="clear();" name="" /> </div>
+            <div class="col-3"><input type="button" value="&#8765;" class="button top-button" name="" /> </div>
+            <div class="col-3"><input type="button" value="Del" class="button top-button" onclick="back();" name="" /> </div>
+            <div class="col-3"><input type="button" value="&#247;" class="button opreator" onclick="insert('/')" name="" /> </div>
+        </div>
+
+        <div class="clearfix">
+            <div class="col-3"><input type="button" value="7" class="button" onclick="insert(7)" name="" /> </div>
+            <div class="col-3"><input type="button" value="8" class="button" onclick="insert(8)" name="" /> </div>
+            <div class="col-3"><input type="button" value="9" class="button" onclick="insert(9)" name="" /> </div>
+            <div class="col-3"><input type="button" value="&#215;" class="button opreator" onclick="insert('*')" name="" /> </div>
+        </div>
+
+        <div class="clearfix">
+            <div class="col-3"><input type="button" value="4" class="button" onclick="insert(4)" name="" /> </div>
+            <div class="col-3"><input type="button" value="5" class="button" onclick="insert(5)" name="" /> </div>
+            <div class="col-3"><input type="button" value="6" class="button" onclick="insert(6)" name="" /> </div>
+            <div class="col-3"><input type="button" value="&#8722;" class="button opreator" onclick="insert('-')" name="" /> </div>
+        </div>
+
+        <div class="clearfix">
+            <div class="col-3"><input type="button" value="1" class="button" onclick="insert(1)" name="" /> </div>
+            <div class="col-3"><input type="button" value="2" class="button" onclick="insert(2)" name="" /> </div>
+            <div class="col-3"><input type="button" value="3" class="button" onclick="insert(3)" name="" /> </div>
+            <div class="col-3"><input type="button" value="&#43;" class="button opreator" onclick="insert('+')" name="" /> </div>
+        </div>
+
+        <div class="clearfix">
+            <div class="col-3"><input type="button" value="." class="button" onclick="insert('.')" name="" /> </div>
+            <div class="col-3"><input type="button" value="0" class="button" onclick="insert(0)" name="" /> </div>
+            <div class="col-6"><input type="button" value="&#61;" class="button equal" onclick="equal()" name="" /> </div>
+        </div>
+    </div>
+    <script src="main.js" ></script>
+</body>
+</html>
